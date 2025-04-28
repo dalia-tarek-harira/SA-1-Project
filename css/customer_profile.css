@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;600;700;800;900&family=Kanit:wght@300;700&family=Pacifico&family=Roboto:wght@300&display=swap');
+   
+.profile-body {
+    background-color: #f9f9fa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+    padding: 3rem ;
+}
+
+
+
+.profile-card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(85, 69, 100, 0.08);
+    box-shadow: 0 1px 20px 0 rgba(83, 69, 100, 0.08);
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+}
+
+
+
+ .user-profile {
+    border-radius: 5px 0 0 5px;
+}
+
+.profile-background-lite-purple {
+    background: linear-gradient(to left, #b897fa, #8b56f5, #8142FF);
+    padding: 20px 0;
+}
+
+
+
+.profile-card-block1 {
+    padding: 1.25rem;
+}
+
+
+
+ 
+h6 {
+    font-size: 14px;
+}
+
+.profile-card .profile-card-block1 p {
+    line-height: 25px;
+}
+
+p{
+    font-weight: 500;
+
+}
+
+.profile-card-block2 {
+    padding: 40px;
+}
+
+.profile-h2{
+    border-bottom: 1px solid #e0e0e0;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 5px ;
+}
+
+ .profile-card-block1 p {
+    line-height: 25px;
+}
+
+.profile-p {
+    margin-bottom: 10px;
+}
+.profile-h2{
+    padding:20px;
+    padding-bottom: 20px;
+}
+.profile-text-muted {
+    color: rgb(124, 124, 124);
+    size:x-large;
+}
+.user-name-h {
+    font-weight:bolder;
+    font-size: x-large;
+    color:#f3e780;
+}
+.profile-text-muted-links {
+    font-weight: bolder;
+    color: #aa07f6 ;
+}
+.profile-text-muted-links:visited {
+     color: #62038e ;
+     }
+.profile-text-muted-links:hover {
+     color: #c86cf3 
+     }
+
+.profile-link1,.profile-link0, .profile-link1-logout {
+    text-decoration: none;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>.medator</title>
+    <link rel="stylesheet" href="../css/new orders.css">
+</head>
+
+<body>
+    <main class="table">
+        <section class="table__header">
+            <h1>Customer's Orders</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="../images/search.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="../images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="../images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="../images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="../images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> callinfo <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> productno. <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> productname <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> productcode <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> state <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> ahmed 011234568 </td>
+                        <td> 5 </td>
+                        <td> airpods </td>
+                        <td> <strong> #10140 </strong></td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> ali 0111151111 </td>
+                        <td> 7 </td>
+                        <td> bag </td>
+                        <td> <strong> #20554 </strong></td>
+                        <td>
+                            <p class="status cancelled">cancelled</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> hossam 0125469564 </td>
+                        <td> 2 </td>
+                        <td> clothes </td>
+                        <td> <strong> #22333 </strong></td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> mohamed 011238568 </td>
+                        <td> 3 </td>
+                        <td> bag </td>
+                        <td> <strong> #20554 </strong></td>
+                        <td>
+                            <p class="status shipped">Shipped</p>
+                        </td>
+                    </tr><tr>
+                        <td> 5 </td>
+                        <td> aya 011237768 </td>
+                        <td> 8 </td>
+                        <td> airpods </td>
+                        <td> <strong> #10140 </strong></td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                    </tr><tr>
+                        <td> 6 </td>
+                        <td> bell 011234563 </td>
+                        <td> 5 </td>
+                        <td> clothes </td>
+                        <td> <strong> #22333 </strong></td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                    </tr><tr>
+                        <td> 7 </td>
+                        <td> hamza 011264568 </td>
+                        <td> 1 </td>
+                        <td> airpods </td>
+                        <td> <strong> #10140 </strong></td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>

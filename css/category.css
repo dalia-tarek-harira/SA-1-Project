@@ -1,0 +1,159 @@
+body {
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #945eff;
+
+}
+
+header {
+    /* background-color: #945eff; */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 50px;
+    position: relative;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+h2 {
+    font-size: 45px;
+}
+h3 {
+    margin-left: 100px;
+    color: white;
+}
+
+header {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+}
+.search-bar input {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.company-name {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    font-size:x-large;
+}
+
+.company-name h4 {
+    margin: 0;
+}
+
+.user-box {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.cart {
+    position: absolute;
+    top: 18px;
+    right: 90px;
+}
+/* .header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+
+/* .btn{ 
+    margin-left:3%; 
+    margin-right:3%;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+.border-primary:hover
+{
+    color:white;
+    background-color:#000;
+    border:solid 1px #945eff;
+
+} */
+
+/* .btn:hover {
+    transform: scale(1.1);
+} */
+
+/* .btnn{ 
+    margin-right:3%;
+    border-radius: 7px;
+    text-align: center;
+    padding: 5px 20px;
+    margin-left:80px;
+    background-color: #ba86ce7f;
+
+}
+
+nav {
+    background-color: #000000;
+    padding: 5px;
+} */
+
+
+.categore {
+    display: inline-block;
+    background-color: #000;
+    border: 1px solid rgb(185, 144, 206);
+    min-height: 0;
+    width: 13em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    transition: 1s ease;
+}
+
+.categore:hover {
+    transform: scale(1.1);
+}
+
+
+
+.categore-img {
+    width: 300px;
+    /* height: 400px; */
+    height: 250px;
+    margin-left: -20px;
+}
+.categore img{
+    width: calc(80%);
+    margin-left: 5px;
+}
+.categore-info{
+    color: #945eff;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.categore{
+    /* background-color: #EDEAE7; */
+    background-color: white;
+    color: #000;
+    /* padding: 5px; */
+}
+.menu{
+    width: calc(55%);
+}
+hr {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* .categore-info {
+    padding: len;
+    font-size:large;
+    color: rgb(206, 187, 212); 
+}*/

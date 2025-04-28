@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+:root {
+  --color:#6942B4;
+  --secondary-color:#000000;
+  --th-color:#945EFF;
+  --fo-color:#EDEAE7;
+}
+body {
+  background-color: var(--th-color);
+  overflow: hidden;
+}
+.container {
+  width: 1200px;
+  border: 1px solid white;
+  max-width: 100%;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: 200px auto 300px;
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  min-height: 80vh;
+}
+.container .menu {
+  background-color: var(--fo-color);
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+
+}
+.container .centre {
+  background-color: #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+
+}
+.container .cart {
+  background-color: var(--fo-color);
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.menu .logo {
+  padding: 20px;
+  font-family: 'lobster',cursive;
+  font-size: xx-large;
+  height: 40px;
+}
+.menu .logo span {
+  color: var(--th-color);
+}
+.menu ul {
+  padding: 20px 0 20px 20px;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+}
+.menu ul li {
+  padding: 10px 0;
+}
+.menu ul li i {
+  margin-right: 12px;
+}
+.menu ul li .active {
+  color: #945EFF;
+  border-right: 2px solid var(--th-color);
+}
+.menu ul li :hover {
+  color: #945EFF;
+  border-right: 2px solid var(--th-color);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <meta charset="utf-8"/>
+        <meta name="describtion" content="Eductional website for FCAI students aims to facilitate student reach to resources." />
+        <meta name="viewport" content="weid">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>New product</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/trader_side.css">
+        <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;600;700;800;900&family=Kanit:wght@300;700&family=Pacifico&family=Roboto:wght@300&display=swap');
+body{
+    background-color: black;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="trader-home-nav">
+            <div class="nav-links-div">
+                <a  class="Home-link" href="trader_home.html">Home</a>
+                <a  class="nav-go-shopping-link" href="#custumer_home">go shopping</a>
+                <a  class="awesome-links-trader-nav" href="html/menu.html"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></a>
+                <a  class="awesome-links-trader-nav" href="contact_us.html"><i class="fa-solid fa-message fa-xl" style="color: #ffffff;"></i></a>
+                <a  class="awesome-links-trader-nav" href="trader_awards.html"><i class="fa-solid fa-award fa-xl" style="color: #ffffff;"></i></a>
+                <a  class="mediador-logo" href="#link">Mediador.</a>
+            </div>
+            </nav>
+    </header>
+    <main>
+        
+        <div class="add-product-form-div">
+            <h1 class="add-product-form-div-h1-form">Product data</h1>
+            <form id="add-product-form">
+                <input type="file" placeholder="product image" class="trader-adding-product-form-img">
+            <input type="textarea" placeholder="product name" class="trader-adding-product-form-textarea">
+            <input type="textarea" placeholder="product code" class="trader-adding-product-form-textarea">
+            <input type="textarea" placeholder="breif discription" class="trader-adding-product-form-textarea">
+            <input type="number" placeholder="price" class="trader-adding-product-form-textarea">
+            <input type="number" placeholder="available number of pieses" class="trader-adding-product-form-textarea">
+            <input class="add-product-button" type="submit" placeholder="Add">
+            </form>
+
+            </div>
+    </main>
+    <footer class="footer-style-white-background">
+        <div class="footer-scroll-part">
+            <div class="footer-scroll-part-first-list">
+        <ul class="footer-list-setting">
+        <li><h5 class="footer-list-header" >More about us</h5></li> <br>
+        <li><a class="footer-list-link" href="" >about</a></li> <br>
+        <li><a class="footer-list-link" href="" >contact US</a></li> <br>
+        <li><a class="footer-list-link" href="" >privcy and policy</a></li> <br>
+        </ul>
+            </div>
+            <div class="footer-scroll-part-second-list">
+        <ul class="footer-list-setting">
+        <li><h5 class="footer-list-header" >links you may need</h5></li> <br>
+        <li><a class="footer-list-link" href="https://www.helwan.edu.eg/en/faculty-of-computers-and-artificial-intelligence/" >FCAI site</a></li> <br>
+        <li><a class="footer-list-link" href="https://www.facebook.com/FCAIHUOFFICIAL" >FCAI community on facebook</a></li> <br>
+        <li><a class="footer-list-link" href="http://education.fcih.helwan.edu.eg/portal/student/dashboard" >FCAI students intranet</a></li> <br>
+        <li></li>
+        </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+
+    const addProductFormDiv = document.querySelector('.add-product-form-div');
+    const addProductForm = document.querySelector('#add-product-form');
+    
+    addProductForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        addProductFormDiv.style.height="400px";
+        addProductFormDiv.innerHTML = `
+            <h1 class="add-product-form-div-h1-form">Product added.</h1>
+        `;
+    });
+</script>
+</html>

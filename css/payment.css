@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+:root{
+    --mainColor1: #945EFF;
+    --mainColor2: #EDEAE7;
+}
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor1);
+    padding-top: 2%;
+    padding-bottom: 5%;
+} 
+.form{
+    /* margin: 70px auto; */
+    margin-bottom: 15%;
+    padding: 30px;
+    color: var(--mainColor2);
+    padding-left: 70px;
+    padding-right: 70px;
+    border: 2px solid #eee;
+    background-color: var(--mainColor2);
+    border-top-right-radius: 15px 15px;
+    border-top-left-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
+}
+.form .headH{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: .8px solid rgba(128, 128, 128, 0.582);
+    color: var(--mainColor1);
+    z-index: 10;
+    background-color: rgba(128, 128, 128, 0.014);
+}
+.form div{
+    margin-top: 10px;
+}
+.form .account{
+    color: var(--mainColor1);
+    display: flex;
+    justify-content: flex-start;
+    font-size: larger;
+}
+.form .inputName input{
+    padding: 10px;
+    margin: 5px;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    border: none;
+}
+.form .inputEmail input{
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    border: none;
+}
+.form .inputnumber input{
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    border: none;
+}
+.form .inputcard input{
+    width: 95%;
+    padding: 5px;
+    margin: 5px;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    border: none;
+}
+.form input:focus{
+    outline: 1.5px solid var(--mainColor1);
+}
+.form .pay{
+    display: flex;
+    justify-content: center;
+}
+.form .pay a{
+    color: var(--mainColor2);
+    background-color: var(--mainColor1);
+    font-size: larger;
+    font-weight: bold;
+    letter-spacing: .7px;
+    text-decoration: none;
+    padding: 7px;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    width: 100%;
+    text-indent: 40%;
+}
+.form .detailsH{
+    color: var(--mainColor1);
+    font-size: larger;
+}
+.form .card{
+    color: var(--mainColor1);
+    font-size: larger;
+}
+.form .details a{
+    color: var(--mainColor2);
+    /* font-size: larger; */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--mainColor1);
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+.form .details{
+    display: flex;
+    justify-content: space-evenly;
+}

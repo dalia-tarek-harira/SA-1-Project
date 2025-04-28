@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive About Us Page HTML &CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+<link rel="stylesheet" type="text/css" href="../css/product2.css">
+</head>
+<body>
+    <header>
+    <div class="styledHeader">
+        <div class="company-name">
+            <h4>Mediador.</h4>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Here">
+        </div>
+        <div class="user-box">
+            <div class="user-icon">
+                <img class ="menu" src ="../images/shopping_cart.png" alt="">
+            </div>
+        </div>
+        <!-- <div class="cart">
+            <img class ="menu" src ="../images/menu.png" alt="">
+    
+        </div> -->
+        
+    </div>
+    </header>
+
+    <div class="about-us">
+        <div class="container">
+            <!-- <div class="row2">
+                <div class="offers">
+                    <h1>Offeres</h1>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="flex">
+                    <h1 >Shoulder Bag</h1>
+                    <p>Material: Premium waterproof nylon fabric. </p> 
+                            <p> Brand: L'avvento </p> 
+                            <p class="par">The price :200 $</p>
+                            <p class="dis"> <del>300 $   </del> <mark> -25%</mark></p>
+                    <input class="in" type="number" placeholder="Number of items" id="quantity">
+                                                    
+                    <div class="styled">
+                        <!-- <a href="" class="btn">Learn More</a> -->
+                        <button onclick="addToCart('Rock Bag', 100, 'quantity')" class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="../images/jcjch.jpg" alt="">
+                </div>
+            </div>
+            <div id="cart" class="cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                <h3>Cart</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="cart-total">0</span></p>
+                <a class="btncheck" href="../html/payment.html">Check out</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let cartItems = [];
+        let cartTotal = 0;
+
+        function addToCart(productName, price, quantityInputId) {
+            const quantity = document.getElementById(quantityInputId).valueAsNumber || 1;
+            const total = price * quantity;
+            cartItems.push({ name: productName, price: price, quantity: quantity, total: total });
+            cartTotal += total;
+            updateCart();
+        }
+
+        function removeFromCart(index) {
+            const removedItem = cartItems.splice(index, 1)[0];
+            cartTotal -= removedItem.total;
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItemsElement = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+
+            // Clear previous items
+            cartItemsElement.innerHTML = '';
+
+            // Populate cart items
+            cartItems.forEach((item, index) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `product: ${item.name} price is  :  $${item.price}  Quantity: ${item.quantity}`;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Remove';
+    deleteButton.classList.add('remove-button'); 
+    deleteButton.addEventListener('click', () => removeFromCart(index));
+
+    listItem.appendChild(deleteButton);
+    cartItemsElement.appendChild(listItem);
+});
+            // Update total
+            cartTotalElement.textContent = cartTotal;
+        }
+    </script>
+</body>
+</html>

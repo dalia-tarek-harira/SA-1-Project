@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <meta charset="utf-8"/>
+        <meta name="describtion" content="Eductional website for FCAI students aims to facilitate student reach to resources." />
+        <meta name="viewport" content="weid">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mediador menu </title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/trader_side.css">
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;600;700;800;900&family=Kanit:wght@300;700&family=Pacifico&family=Roboto:wght@300&display=swap');
+    *{
+                
+            padding: 0;
+            margin: 0;
+    }
+        body {
+            background-image: radial-gradient(73% 147%, #000000 59%, #8142ff 100%), radial-gradient(91% 146%, rgba(0, 0, 0, 0.5) 47%, rgba(0,0,0,0.50) 100%);
+background-blend-mode: screen;
+            position : static;
+                }
+        
+        </style>
+
+        </head>
+
+        <body>
+            <header>
+                <div class="menu_page_header">
+                <a href="../html/trader_home.html"><span class="menu_page_header-outButton">
+                        <i class="fa-regular fa-circle-xmark fa-2xl" style="color: #ffffff;"></i>
+                    </span></a>
+                </div>
+            </header>
+            <div class="menu_page_main">
+                <div class="menu_page_content">
+                    <ul>
+                        <li>
+                            <a class="menu_page_content-links" href="../html/customer_profile.html">profile</a>
+                        </li>
+                        <li>
+                            <a class="menu_page_content-links" href="../html/customer_profile.html">logout</a>
+                        </li>
+                        <li>
+                            <a class="menu_page_content-links" href="../html/customer_profile.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </body>
+        <script>
+            
+            var outButton = document.querySelector('.menu_page_header-outButton');
+            var optionOver = document.querySelector('.menu_page_content-links');
+            var menuBody = document.getElementById('body');
+            
+            
+            outButton.addEventListener('mouseover', function () {
+                outButton.innerHTML = '<i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i>';
+            });
+        
+            outButton.addEventListener('mouseout', function () {
+                outButton.innerHTML = '<i class="fa-regular fa-circle-xmark fa-2xl" style="color: #fffff;"></i>';
+            });
+        </script>
+        </html>
+        

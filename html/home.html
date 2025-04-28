@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="../css/home.css">
+  <!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+  <title>online commerece</title>
+</head>
+<body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll('.sec2 ul li a');
+      navLinks.forEach(link => {
+        link.addEventListener('mouseover', function() {
+          this.style.backgroundColor = '#000'; 
+          this.style.padding = '10px';
+          this.style.borderRadius ='20px';
+        });
+        link.addEventListener('mouseout', function() {
+          this.style.backgroundColor = '';
+        });
+      });
+    });
+  </script>
+  
+  <div class="container">
+    <div class="back">
+        <div class="nav-bar">
+          <h1 class="underline">Home</h1>
+        <div class="sec2">
+          <ul>
+            <!-- <li><a href="../html/home.html">Home</a></li> -->
+            <li><a href="#section1">Electronics</a></li>
+            <li><a href="#section3">Sports</a></li>
+            <li><a href="#section2">Bags</a></li>
+            <li><a href="#section4">Clothes</a></li>
+          </ul>
+        </div>
+        <h2 class="log">Mediador.</h2>
+        <a href=""><img class="not" src="../images/notification.png" alt=""></a>
+        
+        <!-- <a href=""><img class="icon" src="../images/263142.png" alt="image"></a> -->
+        
+        </div> 
+  <!-- section one -->
+  <div class="container">
+    <div class="section1" id="section1">
+      <p class="par">
+        <span>Latest</span><br>
+        <span class="styled-par">technical</span><br>
+        <span>Products</span>
+    </p>
+      <div class="styled-button">
+        <a href="../html/register.html"class="pro-button">Shop Naw</a>
+        <a href="../html/category.html" class="pro-button cab">Search item</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- section 2 -->
+    <div class="section2" id="section2">
+      <div class="sec">
+          <div class="sec-image">
+            <img class="im" src="../images/bags.png" alt="image">
+          </div>
+          <div class="sec-par">
+          <p class="par">
+            <span>New</span><br>
+            <span class="styled-par">collections</span><br>
+            <span>of bags</span>
+          </p>
+          <div class="styled-button">
+            <a href="../html/register.html"class="pro-button">Shop Naw</a>
+            <a href="../html/category.html" class="pro-button cab">Search item</a>
+          </div>
+      </div>
+      </div>
+      </div>
+      <!-- section three -->
+      <div class="section3" id="section3">
+        <div class="sec3">
+          <p class="par">
+          <span class="styled-par">Sports</span><br>
+          <span >shoes and</span><br>
+          <span>supplies</span>
+        </p>
+        <div class="styled-sec2">
+          <a href="../html/register.html"class="pro-button">Shop Naw</a>
+          <a href="../html/category.html" class="pro-button cab">Search item</a>
+        </div>
+      </div>
+      </div>
+      <!-- end section3 -->
+      <!-- start section4 -->
+      <div class="section4" id="section4">
+        <div class="sec4">
+            <div class="sec-image">
+              <img class="im" src="../images/man_model.png" alt="image">
+            </div>
+            <div class="sec-par">
+            <p class="par">
+              <span>Clothes</span><br>
+              and <span class="styled-par">Fashion</span><br>
+              <span>For evreyone</span>
+            </p>
+            <div class="styled-button-sec4">
+              <a href="../html/register.html"class="pro-button-sec4">Shop Naw</a>
+              <a href="../html/category.html" class="pro-button cab">Search item</a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!-- footer -->
+          <footer class="footer-style-white-background">
+            <div class="footer-scroll-part">
+                <div class="footer-scroll-part-first-list">
+            <ul class="footer-list-setting">
+            <li><h5 class="footer-list-header" >More about us</h5></li> <br>
+            <li><a class="footer-list-link" href="../html/About.html" >about</a></li> <br>
+            <li><a class="footer-list-link" href="../html/contact_us.html" >contact US</a></li> <br>
+            <li><a class="footer-list-link" href="" >privcy and policy</a></li> <br>
+            </ul>
+                </div>
+                <div class="footer-scroll-part-second-list">
+            <ul class="footer-list-setting">
+            <li><h5 class="footer-list-header" >links you may need</h5></li> <br>
+            <li><a class="footer-list-link" href="https://www.helwan.edu.eg/en/faculty-of-computers-and-artificial-intelligence/" >FCAI site</a></li> <br>
+            <li><a class="footer-list-link" href="https://www.facebook.com/FCAIHUOFFICIAL" >FCAI community on facebook</a></li> <br>
+            <li><a class="footer-list-link" href="http://education.fcih.helwan.edu.eg/portal/student/dashboard" >FCAI students intranet</a></li> <br>
+            <li></li>
+            </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>
